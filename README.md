@@ -110,6 +110,77 @@
 
     </details>
 
+1.  <details>
+    <summary><code>amplify mock</code></summary>
+
+    ```
+    ❯ amplify mock
+    Some resources have changed locally and these resources are not mockable. The resources listed below need to be pushed to the cloud before starting the mock server.
+
+    Current Environment: dev
+
+    | Category | Resource name | Operation | Provider plugin   |
+    | -------- | ------------- | --------- | ----------------- |
+    | Api      | graphql       | Create    | awscloudformation |
+    | Function | graphql       | Create    | awscloudformation |
+    ? Are you sure you want to continue? Yes
+    ⠹ Updating resources in the cloud. This may take a few minutes...
+
+    UPDATE_IN_PROGRESS create-graphql-app-dev-20190910153235 AWS::CloudFormation::Stack Tue Sep 10 2019 16:01:21 GMT-0700 (Pacific Daylight Time) User Initiated
+    UPDATE_IN_PROGRESS functiongraphql                       AWS::CloudFormation::Stack Tue Sep 10 2019 16:01:25 GMT-0700 (Pacific Daylight Time)
+    ⠇ Updating resources in the cloud. This may take a few minutes...
+
+    UPDATE_IN_PROGRESS create-graphql-app-dev-20190910153235-functiongraphql-14MIHPQ8XJKWO AWS::CloudFormation::Stack Tue Sep 10 2019 16:01:26 GMT-0700 (Pacific Daylight Time) User Initiated
+    ⠏ Updating resources in the cloud. This may take a few minutes...
+
+    UPDATE_IN_PROGRESS LambdaExecutionRole AWS::IAM::Role Tue Sep 10 2019 16:01:32 GMT-0700 (Pacific Daylight Time) Requested update requires the creation of a new physical resource; hence creating one.
+    UPDATE_IN_PROGRESS LambdaExecutionRole AWS::IAM::Role Tue Sep 10 2019 16:01:33 GMT-0700 (Pacific Daylight Time) Resource creation Initiated
+    ⠋ Updating resources in the cloud. This may take a few minutes...
+
+    UPDATE_COMPLETE LambdaExecutionRole AWS::IAM::Role Tue Sep 10 2019 16:01:47 GMT-0700 (Pacific Daylight Time)
+    ⠸ Updating resources in the cloud. This may take a few minutes...
+
+    UPDATE_IN_PROGRESS LambdaFunction AWS::Lambda::Function Tue Sep 10 2019 16:01:50 GMT-0700 (Pacific Daylight Time)
+    UPDATE_COMPLETE    LambdaFunction AWS::Lambda::Function Tue Sep 10 2019 16:01:51 GMT-0700 (Pacific Daylight Time)
+    ⠙ Updating resources in the cloud. This may take a few minutes...
+
+    UPDATE_IN_PROGRESS lambdaexecutionpolicy AWS::IAM::Policy Tue Sep 10 2019 16:01:53 GMT-0700 (Pacific Daylight Time)
+    ⠙ Updating resources in the cloud. This may take a few minutes...
+
+    UPDATE_COMPLETE lambdaexecutionpolicy AWS::IAM::Policy Tue Sep 10 2019 16:02:01 GMT-0700 (Pacific Daylight Time)
+    ⠦ Updating resources in the cloud. This may take a few minutes...
+
+    UPDATE_COMPLETE_CLEANUP_IN_PROGRESS create-graphql-app-dev-20190910153235-functiongraphql-14MIHPQ8XJKWO AWS::CloudFormation::Stack Tue Sep 10 2019 16:02:04 GMT-0700 (Pacific Daylight Time)
+    ⠇ Updating resources in the cloud. This may take a few minutes...
+
+    UPDATE_COMPLETE functiongraphql AWS::CloudFormation::Stack Tue Sep 10 2019 16:02:13 GMT-0700 (Pacific Daylight Time)
+    ⠦ Updating resources in the cloud. This may take a few minutes...
+
+    UPDATE_IN_PROGRESS apigraphql AWS::CloudFormation::Stack Tue Sep 10 2019 16:02:16 GMT-0700 (Pacific Daylight Time)
+    UPDATE_COMPLETE    apigraphql AWS::CloudFormation::Stack Tue Sep 10 2019 16:02:16 GMT-0700 (Pacific Daylight Time)
+    ⠸ Updating resources in the cloud. This may take a few minutes...
+
+    UPDATE_COMPLETE_CLEANUP_IN_PROGRESS create-graphql-app-dev-20190910153235 AWS::CloudFormation::Stack Tue Sep 10 2019 16:02:19 GMT-0700 (Pacific Daylight Time)
+    UPDATE_IN_PROGRESS                  apigraphql                            AWS::CloudFormation::Stack Tue Sep 10 2019 16:02:20 GMT-0700 (Pacific Daylight Time)
+    UPDATE_COMPLETE                     apigraphql                            AWS::CloudFormation::Stack Tue Sep 10 2019 16:02:20 GMT-0700 (Pacific Daylight Time)
+    UPDATE_IN_PROGRESS                  functiongraphql                       AWS::CloudFormation::Stack Tue Sep 10 2019 16:02:21 GMT-0700 (Pacific Daylight Time)
+    ⠏ Updating resources in the cloud. This may take a few minutes...
+
+    DELETE_IN_PROGRESS LambdaExecutionRole AWS::IAM::Role Tue Sep 10 2019 16:02:22 GMT-0700 (Pacific Daylight Time)
+    ⠧ Updating resources in the cloud. This may take a few minutes...
+
+    DELETE_COMPLETE LambdaExecutionRole                                                 AWS::IAM::Role             Tue Sep 10 2019 16:02:24 GMT-0700 (Pacific Daylight Time)
+    UPDATE_COMPLETE create-graphql-app-dev-20190910153235-functiongraphql-14MIHPQ8XJKWO AWS::CloudFormation::Stack Tue Sep 10 2019 16:02:25 GMT-0700 (Pacific Daylight Time)
+    ⠏ Updating resources in the cloud. This may take a few minutes...
+
+    UPDATE_COMPLETE functiongraphql                       AWS::CloudFormation::Stack Tue Sep 10 2019 16:02:32 GMT-0700 (Pacific Daylight Time)
+    UPDATE_COMPLETE create-graphql-app-dev-20190910153235 AWS::CloudFormation::Stack Tue Sep 10 2019 16:02:32 GMT-0700 (Pacific Daylight Time)
+    ✔ All resources are updated in the cloud
+
+    ```
+
+    </details>
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
