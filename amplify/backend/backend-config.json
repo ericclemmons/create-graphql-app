@@ -5,5 +5,21 @@
 			"providerPlugin": "awscloudformation",
 			"build": true
 		}
+	},
+	"api": {
+		"graphql": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "graphql",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		}
 	}
 }

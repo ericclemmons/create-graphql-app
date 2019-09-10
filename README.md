@@ -88,7 +88,27 @@
 
     </details>
 
-1.  Next
+1.  <details>
+    <summary><code>amplify add api</code></summary>
+
+    ```
+    ❯ amplify add api
+    ? Please select from one of the below mentioned services REST
+    ? Provide a friendly name for your resource to be used as a label for this category in the project: graphql
+    ? Provide a path (e.g., /items) /graphql
+    ? Choose a Lambda source Use a Lambda function already added in the current Amplify project
+    ? Choose the Lambda function to invoke by this path graphql
+    ? Restrict API access No
+    ? Do you want to add another path? No
+    Successfully added resource graphql locally
+
+    Some next steps:
+    "amplify push" will build all your local backend resources and provision it in the cloud
+    "amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+    ```
+
+    </details>
 
 ---
 
