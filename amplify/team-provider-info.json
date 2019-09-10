@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "create-graphql-app-dev-20190910153235-authRole",
+            "UnauthRoleArn": "arn:aws:iam::535149436476:role/create-graphql-app-dev-20190910153235-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::535149436476:role/create-graphql-app-dev-20190910153235-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "create-graphql-app-dev-20190910153235-deployment",
+            "UnauthRoleName": "create-graphql-app-dev-20190910153235-unauthRole",
+            "StackName": "create-graphql-app-dev-20190910153235",
+            "StackId": "arn:aws:cloudformation:us-east-1:535149436476:stack/create-graphql-app-dev-20190910153235/e372caa0-d41a-11e9-b0e7-0adb15c4df9c"
+        }
+    }
+}

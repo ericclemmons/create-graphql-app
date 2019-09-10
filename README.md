@@ -1,3 +1,70 @@
+# `create-graphql-app`
+
+> Add a GraphQL lamda to `create-react-app`.
+
+1. `yarn create react-app create-graphql-app`
+1. <details>
+     <summary><code>amplify init</code></summary>
+     ```
+     Note: It is recommended to run this command from the root of your app directory
+     ? Enter a name for the project create-graphql-app
+     ? Enter a name for the environment dev
+     ? Choose your default editor: Visual Studio Code
+     ? Choose the type of app that you're building javascript
+     Please tell us about your project
+     ? What javascript framework are you using react
+     ? Source Directory Path:  src
+     ? Distribution Directory Path: build
+     ? Build Command:  npm run-script build
+     ? Start Command: npm run-script start
+     Using default provider  awscloudformation
+
+
+      For more information on AWS Profiles, see:
+      https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
+
+      ? Do you want to use an AWS profile? Yes
+      ? Please choose the profile you want to use default
+      ⠙ Initializing project in the cloud...
+
+      CREATE_IN_PROGRESS create-graphql-app-dev-20190910153235 AWS::CloudFormation::Stack Tue Sep 10 2019 15:32:36 GMT-0700 (Pacific Daylight Time) User Initiated
+      CREATE_IN_PROGRESS AuthRole                              AWS::IAM::Role             Tue Sep 10 2019 15:32:39 GMT-0700 (Pacific Daylight Time)
+      CREATE_IN_PROGRESS DeploymentBucket                      AWS::S3::Bucket            Tue Sep 10 2019 15:32:39 GMT-0700 (Pacific Daylight Time)
+      CREATE_IN_PROGRESS AuthRole                              AWS::IAM::Role             Tue Sep 10 2019 15:32:39 GMT-0700 (Pacific Daylight Time) Resource creation Initiated
+      CREATE_IN_PROGRESS UnauthRole                            AWS::IAM::Role             Tue Sep 10 2019 15:32:39 GMT-0700 (Pacific Daylight Time)
+      CREATE_IN_PROGRESS DeploymentBucket                      AWS::S3::Bucket            Tue Sep 10 2019 15:32:40 GMT-0700 (Pacific Daylight Time) Resource creation Initiated
+      CREATE_IN_PROGRESS UnauthRole                            AWS::IAM::Role             Tue Sep 10 2019 15:32:40 GMT-0700 (Pacific Daylight Time) Resource creation Initiated
+      ⠏ Initializing project in the cloud...
+
+      CREATE_COMPLETE AuthRole   AWS::IAM::Role Tue Sep 10 2019 15:32:53 GMT-0700 (Pacific Daylight Time)
+      CREATE_COMPLETE UnauthRole AWS::IAM::Role Tue Sep 10 2019 15:32:54 GMT-0700 (Pacific Daylight Time)
+      ⠇ Initializing project in the cloud...
+
+      CREATE_COMPLETE DeploymentBucket AWS::S3::Bucket Tue Sep 10 2019 15:33:00 GMT-0700 (Pacific Daylight Time)
+      ⠙ Initializing project in the cloud...
+
+      CREATE_COMPLETE create-graphql-app-dev-20190910153235 AWS::CloudFormation::Stack Tue Sep 10 2019 15:33:03 GMT-0700 (Pacific Daylight Time)
+      ✔ Successfully created initial AWS cloud resources for deployments.
+      ✔ Initialized provider successfully.
+      Initialized your environment successfully.
+
+      Your project has been successfully initialized and connected to the cloud!
+
+      Some next steps:
+      "amplify status" will show you what you've added already and if it's locally configured or deployed
+      "amplify <category> add" will allow you to add features like user login or a backend API
+      "amplify push" will build all your local backend resources and provision it in the cloud
+      "amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+      Pro tip:
+      Try "amplify add api" to create a backend API and then "amplify publish" to deploy everything
+      ```
+    </details>
+
+1. Howdy
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
