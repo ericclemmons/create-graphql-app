@@ -4,20 +4,20 @@
 
 1. `yarn create react-app create-graphql-app`
 1. <details>
-     <summary><code>amplify init</code></summary>
-     ```
-     Note: It is recommended to run this command from the root of your app directory
-     ? Enter a name for the project create-graphql-app
-     ? Enter a name for the environment dev
-     ? Choose your default editor: Visual Studio Code
-     ? Choose the type of app that you're building javascript
-     Please tell us about your project
-     ? What javascript framework are you using react
-     ? Source Directory Path:  src
-     ? Distribution Directory Path: build
-     ? Build Command:  npm run-script build
-     ? Start Command: npm run-script start
-     Using default provider  awscloudformation
+   <summary><code>amplify init</code></summary>
+   ```
+   Note: It is recommended to run this command from the root of your app directory
+   ? Enter a name for the project create-graphql-app
+   ? Enter a name for the environment dev
+   ? Choose your default editor: Visual Studio Code
+   ? Choose the type of app that you're building javascript
+   Please tell us about your project
+   ? What javascript framework are you using react
+   ? Source Directory Path:  src
+   ? Distribution Directory Path: build
+   ? Build Command:  npm run-script build
+   ? Start Command: npm run-script start
+   Using default provider  awscloudformation
 
 
       For more information on AWS Profiles, see:
@@ -60,6 +60,34 @@
       Try "amplify add api" to create a backend API and then "amplify publish" to deploy everything
       ```
     </details>
+
+1. <details>
+   <summary><code>amplify add api</code></summary>
+
+   ```
+   ? Please select from one of the below mentioned services REST
+   ? Provide a friendly name for your resource to be used as a label for this category in the project: graphql
+   ? Provide a path (e.g., /items) /graphql
+   ? Choose a Lambda source Create a new Lambda function
+   ? Provide a friendly name for your resource to be used as a label for this category in the project: graphql
+   ? Provide the AWS Lambda function name: graphql
+   ? Choose the function template that you want to use: Serverless express function (Integration with Amazon API Gateway)
+   ? Do you want to access other resources created in this project from your Lambda function? No
+   ? Do you want to edit the local lambda function now? Yes
+   Please edit the file in your editor: /Users/ecclemm/Projects/ericclemmons/create-graphql-app/amplify/backend/function/graphql/src/index.js
+   ? Press enter to continue
+   Succesfully added the Lambda function locally
+   ? Restrict API access No
+   ? Do you want to add another path? No
+   Successfully added resource graphql locally
+
+   Some next steps:
+   "amplify push" will build all your local backend resources and provision it in the cloud
+   "amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+   ```
+
+   </details>
 
 1. Howdy
 
