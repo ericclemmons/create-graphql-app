@@ -1,1 +1,9 @@
-{}
+{
+	"function": {
+		"graphql": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true
+		}
+	}
+}

@@ -4,20 +4,22 @@
 
 1. `yarn create react-app create-graphql-app`
 1. <details>
-     <summary><code>amplify init</code></summary>
-     ```
-     Note: It is recommended to run this command from the root of your app directory
-     ? Enter a name for the project create-graphql-app
-     ? Enter a name for the environment dev
-     ? Choose your default editor: Visual Studio Code
-     ? Choose the type of app that you're building javascript
-     Please tell us about your project
-     ? What javascript framework are you using react
-     ? Source Directory Path:  src
-     ? Distribution Directory Path: build
-     ? Build Command:  npm run-script build
-     ? Start Command: npm run-script start
-     Using default provider  awscloudformation
+   <summary><code>amplify init</code></summary>
+
+   ```
+   Note: It is recommended to run this command from the root of your app directory
+   ? Enter a name for the project create-graphql-app
+   ? Enter a name for the environment dev
+   ? Choose your default editor: Visual Studio Code
+   ? Choose the type of app that you're building javascript
+   Please tell us about your project
+   ? What javascript framework are you using react
+   ? Source Directory Path:  src
+   ? Distribution Directory Path: build
+   ? Build Command:  npm run-script build
+   ? Start Command: npm run-script start
+   Using default provider  awscloudformation
+   ```
 
 
       For more information on AWS Profiles, see:
@@ -59,9 +61,34 @@
       Pro tip:
       Try "amplify add api" to create a backend API and then "amplify publish" to deploy everything
       ```
+
     </details>
 
-1. Howdy
+1.  <details>
+    <summary><code>amplify function add</code></summary>
+
+    ```
+    ❯ amplify function add
+    Using service: Lambda, provided by: awscloudformation
+    ? Provide a friendly name for your resource to be used as a label for this category in the project: graphql
+    ? Provide the AWS Lambda function name: graphql
+    ? Choose the function template that you want to use: Serverless express function (Integration with Amazon API Gateway)
+    ? Do you want to access other resources created in this project from your Lambda function? No
+    ? Do you want to edit the local lambda function now? No
+    Successfully added resource graphql locally.
+
+    Next steps:
+    Check out sample function code generated in <project-dir>/amplify/backend/function/graphql/src
+    "amplify function build" builds all of your functions currently in the project
+    "amplify function invoke graphql" enables you to test a function locally
+    "amplify push" builds all of your local backend resources and provisions them in the cloud
+    "amplify publish" builds all of your local backend and front-end resources (if you added hosting category) and provisions them in the cloud
+
+    ```
+
+    </details>
+
+1.  Next
 
 ---
 
