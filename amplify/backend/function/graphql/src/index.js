@@ -1,9 +1,35 @@
-const awsServerlessExpress = require('aws-serverless-express');
-const app = require('./app');
+const { ApolloServer, gql } = require("apollo-server-lambda");
 
-const server = awsServerlessExpress.createServer(app);
+// Construct a schema, using GraphQL schema language
+const typeDefs = gql`
+  type Query {
+    hello: String
+  }
+`;
 
-exports.handler = (event, context) => {
-  console.log(`EVENT: ${JSON.stringify(event)}`);
-  awsServerlessExpress.proxy(server, event, context);
+// Provide resolver functions for your schema fields
+const resolvers = {
+  Query: {
+    hello: (parent, args, context) => {
+      return "Hello world!";
+    }
+  }
 };
+
+const server = new ApolloServer({
+  typeDefs,
+  resolvers
+});
+
+exports.handler = server.createHandler({
+  cors: {
+    origin: true,
+    credentials: true,
+    allowedHeaders: [
+      "authorization",
+      "content-type",
+      "x-amz-security-token",
+      "x-amz-date"
+    ]
+  }
+});
